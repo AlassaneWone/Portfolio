@@ -18,7 +18,6 @@ body {
     background: rgb(18, 16, 16);
     border: 2px solid #333;
     box-shadow: 0 0 7px #333, inset 0 0 7px #333;
-    margin: auto;
     padding: 10px 20px;
     transform: rotate(0deg) skewX(0deg);
     animation: crt 3s infinite linear;
@@ -71,6 +70,15 @@ html, body {
     margin: 0;
     padding: 0;
     color: var(--main-color);
+}
+
+li{
+    line-height: 1.6;
+}
+
+.blue{
+    color: var(--directory-color);
+    text-shadow: 0 0 10px var(--directory-color), 0 0 20px var(--directory-color);
 }
 
 #content-container {
@@ -146,18 +154,54 @@ a {
     font-size: 40px;
 }
 
+#about_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pdf {
+    display: flex;
+    align-items: end;
+    align-self: flex-end;
+}
+
 #ecole{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+#about_body{
+    width: 900px;
+}
+
+.cv{
+    text-align: justify;
+}
+
+#about_skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blist {
+    column-count: 2;
+}
+
+#contact{
+    margin-left: -10px;
+    border-top: solid 1px var(--main-color);
+} 
+
 #info_container{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin: 10px;
+    margin: 20px;
     gap: 10px;
+    justify-content: center;
+    height: 100%;
 }
 
 .infos {
@@ -169,9 +213,4 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.directory {
-    color: var(--directory-color);
-    text-shadow: 0 0 10px var(--directory-color), 0 0 20px var(--directory-color);
 }
